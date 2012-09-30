@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLAHViewController : UIViewController
+@interface BLAHViewController : UIViewController <UITextFieldDelegate>
+{
+  IBOutlet UILabel *helloWorldLabel;
+  IBOutlet UITextField *textFieldName;
+}
+
+@property(nonatomic, retain) IBOutlet UILabel* helloWorldLabel;
+@property(nonatomic, retain) IBOutlet UITextField* textFieldName;
+
+- (IBAction)sayHello:(id)sender;
+- (IBAction)clearBox:(id)sender;
 
 @end
