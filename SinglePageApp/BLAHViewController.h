@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLAHViewController : UIViewController <UITextFieldDelegate>
+@interface BLAHViewController : UIViewController
 {
   IBOutlet UILabel *helloWorldLabel;
   IBOutlet UITextField *textFieldName;
